@@ -1,0 +1,175 @@
+/* ----------------- FONTS ----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+
+/* ----------------- VARIABLES CSS ----------------- */
+:root {
+  /*========== Font and typography ==========*/
+  /* 1rem = 16px */
+  font-family: 'Combo', cursive;
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 2.4rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+  --biggest-icon-size: 2rem;
+  --normal-icon-size: 1.5rem;
+  --small-icon-size: 1rem;
+  --biggest-logo-size: 3rem;
+  --normal-logo-size: 2.5rem;
+  --small-logo-size: 2rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /*========== Colors ==========*/
+  /*
+        Blue: #74b9ff 
+        Teal: #81ecec
+        Green: ##00b894
+        Blue-Dark: #0984e3 
+        Blue-Darker: #032844
+        Blue-Darker2: #021a2d
+        Blue-Darkest: #010d17
+        Gray: #dfe6e9
+        Gray-Dark: #b2bec3
+  */
+  --text-title-color: #74b9ff;
+  --text-color: #032844;
+  --text-color-dark: #b2bec3;
+  --body-color: #010d17;
+  --container-color: #032844;
+  --body-color-light: #b2bec3;
+
+  /*========== Border ==========*/
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 15px;
+}
+
+/* ----------------- BASES ----------------- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color-light);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-semibold);
+  text-align: center;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ----------------- Table ----------------- */
+#table {
+  width: 100vw;
+  height: 100vh;
+  border: 5px white solid;
+  position: relative;
+}
+
+#centerline {
+  width: 100vw;
+  height: 2px;
+  background-color: white;
+  position: fixed;
+  top: calc(50% - 1.5px);
+}
+
+/* ----------------- Rod ----------------- */
+.rod {
+  height: 12px;
+  width: 160px;
+  border-radius: 6px;
+  position: fixed;
+  left: calc(50% - 80px);
+}
+
+.rod-player1 {
+  position: fixed;
+  top: calc(0% + 5px);
+  background-color: blue;
+}
+
+.rod-player2 {
+  position: fixed;
+  bottom: calc(0% + 5px);
+  background-color: red;
+}
+
+/* ----------------- Ball ----------------- */
+#ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  z-index: 100;
+}
+
+/* ----------------- Text ----------------- */
+.text-container {
+  margin-top: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  margin-top: 1.2rem;
+  font-size: 2rem;
+}
+
+.score {
+  font-size: 8rem;
+  color: var(--text-color);
+  opacity: 60%;
+}
+
+.score-player1 {
+  position: fixed;
+  top: 30%;
+  left: calc(50% - 2.1rem);
+}
+
+.score-player2 {
+  position: fixed;
+  top: 54%;
+  left: calc(50% - 2.1rem);
+}
